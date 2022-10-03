@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.fontSize": 9,
+        "cSpell.words": [
+            "kiteboarder",
+            "Kiteboarder",
+            "kiteboarding"
+        ]
+    }
+}
