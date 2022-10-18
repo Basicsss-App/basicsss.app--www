@@ -1,0 +1,66 @@
+// Copyright (c) 2022-present, Wrikified by Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- FORMS  ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-signup-container {
+  border-radius: $border-radius__input;
+  box-shadow: $box-shadow__default;
+  margin: $spacing__default auto 0;
+  overflow: hidden;
+  position: relative;
+  .#{$prefix-name}-button-container {
+    margin-left: -2px;
+  }
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- INPUT  ----------
+// ----------
+// ----------
+//
+.__input,
+.__textarea {
+  border: 0;
+  color: $colour-blue__default;
+  font-family: $font-family__default;
+  font-size: $font-size__default;
+  font-size: $font-size__heading-5;
+  padding: $spacing__default;
+  position: relative;
+  width: 100%;
+}
+
+label {
+  color: $colour-white__default;
+  display: block;
+  font-family: $font-family__default;
+  font-size: $font-size__xsmall;
+  padding: 0 0 3px;
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+  color: $colour-blue__default;
+  font-size: $font-size__heading-5;
+}
+::-moz-placeholder {
+  color: $colour-blue__default;
+  font-size: $font-size__heading-5;
+}
+::-ms-input-placeholder {
+  color: $colour-blue__default;
+  font-size: $font-size__heading-5;
+}

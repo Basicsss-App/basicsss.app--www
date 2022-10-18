@@ -1,0 +1,30 @@
+// Copyright (c) 2022-present, Wrikified by Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- CARD  ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-card-container {
+  position: relative;
+  * {
+    color: $colour-blue__default;
+  }
+  .__card {
+    background: $colour-white__default;
+    border-radius: $border-radius__default;
+    box-shadow: $box-shadow__default;
+    padding: $spacing__default;
+  }
+  .__image,
+  .__copy {
+    text-align: center;
+  }
+}

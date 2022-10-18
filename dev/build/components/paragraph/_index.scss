@@ -1,0 +1,122 @@
+// Copyright (c) 2022-present, Wrikified by Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- PARAGRAPHS ----------
+// ----------
+// ----------
+//
+p {
+  color: $colour-white__default;
+  font-family: $font-family__default;
+  font-size: $font-size__default;
+  font-weight: 400;
+  line-height: calc($font-size__default + 40%);
+  margin-bottom: $spacing__default;
+}
+
+i,
+em {
+  color: inherit;
+  font-style: italic;
+  font-weight: initial;
+}
+
+b,
+strong {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+sub {
+  bottom: unset;
+}
+
+hr {
+  margin-bottom: $spacing__large;
+}
+
+blockquote {
+  //   border-left: 10px solid $colour-purple__default;
+  margin: 0 0 $spacing__large $spacing__large;
+  padding: $spacing__default 0 $spacing__default $spacing__large;
+  p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    opacity: 0.7;
+    padding: $spacing__default 0;
+  }
+}
+
+::marker {
+  font-family: $font-family__default;
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- LINKS ----------
+// ----------
+// ----------
+//
+a,
+a:hover,
+a:active,
+a:visited {
+  color: $colour-white__default;
+  font-family: $font-family__default;
+  font-size: $font-size__default;
+  font-weight: 400;
+  text-decoration: underline;
+  &._wrike {
+    background-color: $colour-white__default;
+    border-radius: $border-radius__default;
+    box-shadow: $box-shadow__light;
+    color: $colour-black__dark;
+    font-weight: 500 !important;
+    padding: $spacing__small ($spacing__default * 1.8) !important;
+    i {
+      background-image: url(#{$path-images}brands/brand-logo-wrike-full.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      height: 23px;
+      margin-bottom: -5px;
+      margin-left: 3px;
+      width: 94px;
+    }
+  }
+}
+
+a:hover {
+  color: $colour-green__default;
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- LIST ----------
+// ----------
+// ----------
+//
+ol {
+  color: $colour-white__default;
+  margin-left: $spacing__default;
+  li {
+    padding-bottom: 2px;
+    padding-left: 5px;
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+// Copyright (c) 2022-present, Wrikified by Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- GRID ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  &._column-nav {
+    grid-template-columns: min-content 1fr;
+  }
+  &._column-signup {
+    grid-template-columns: 1fr min-content;
+  }
+  &._column-two {
+    grid-template-columns: repeat(2, 1fr [col-start]);
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
+  }
+  &._column-four {
+    grid-template-columns: repeat(4, 1fr [col-start]);
+    @include mixinResponsive("wide-mobile") {
+      grid-template-columns: repeat(2, 1fr [col-start]);
+    }
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
+  }
+  &._column-gap__default {
+    column-gap: ($spacing__default * 2);
+  }
+  &._column-gap__large {
+    column-gap: ($spacing__default * 5.5);
+  }
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- FLEX ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-flex-prep {
+  height: 100vh;
+}
+
+.#{$prefix-name}-flex-container {
+  display: flex;
+}

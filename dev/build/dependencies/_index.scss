@@ -1,0 +1,125 @@
+// Copyright (c) 2022-present, Wrikified by Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- TYPEFACE  ----------
+// ----------
+// ----------
+//
+$font-family__default: "Roboto", sans-serif;
+
+$font-size__xsmall: 0.625rem; // 0.625rem = 10px;
+$font-size__small: 0.88rem; // 0.875= 14px;
+$font-size__default: 16px; // 1rem = 16px
+
+$font-size__heading-1: 2.813rem; // 2.813rem = 45px
+$font-size__heading-2: 2.188rem; // 2.188rem = 35px
+$font-size__heading-3: 1.375rem; // 1.375rem = 22px
+$font-size__heading-4: 1.25rem; // 1.25rem = 20px
+$font-size__heading-5: 1.125rem; // 1.125rem = 18px
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- COLUMNS & PADDING  ----------
+// ----------
+// ----------
+//
+$column-one__max: 1000px;
+$column-one__600: 600px;
+
+$spacing__small: 10px;
+$spacing__default: 20px;
+$spacing__medium: 130px;
+$spacing__large: 300px;
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- COLOURS  ----------
+// ----------
+// ----------
+//
+
+// Generic
+$colour-black__default: rgb(8, 76, 97);
+$colour-black__dark: rgb(0, 0, 0);
+$colour-white__default: rgb(255, 255, 255);
+
+// Blue
+$colour-blue__light: rgba(93, 183, 222, 1);
+$colour-blue__default: rgba(59, 42, 127, 1);
+$colour-blue__dark: rgba(47, 34, 102, 1);
+
+$colour-blue__shadow: rgba(59, 42, 127, 0.3);
+
+// Green
+$colour-green__default: rgba(6, 214, 160, 1);
+$colour-green__wrike: rgba(8, 207, 101, 1);
+
+$colour-green__shadow: rgba(6, 214, 160, 0.4);
+
+// Pink
+$colour-pink__default: rgba(255, 159, 229, 1);
+
+// Red
+$colour-red__default: rgba(255, 133, 141, 1);
+
+// Grey
+$colour-grey__light: rgba(244, 244, 244, 1);
+$colour-grey__default: rgba(206, 216, 219, 1);
+$colour-grey__dark: rgba(165, 165, 165, 1);
+
+$colour-grey__shadow: rgba(244, 244, 244, 0.2);
+
+// Gradient
+$colour-gradient__blue-green: linear-gradient(
+  0deg,
+  $colour-green__default 0%,
+  $colour-blue__default 100%
+);
+
+$colour-gradient__blue-pink: linear-gradient(
+  0deg,
+  $colour-pink__default 0%,
+  $colour-blue__default 100%
+);
+
+$colour-gradient__blue-red: linear-gradient(
+  0deg,
+  $colour-red__default 0%,
+  $colour-blue__default 100%
+);
+
+$colour-gradient__blue-light: linear-gradient(
+  0deg,
+  $colour-blue__light 0%,
+  $colour-blue__default 100%
+);
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- MISC  ----------
+// ----------
+// ----------
+//
+// $transition-speed__default: 0.6s;
+// $transition-speed__fast: 0.3s;
+
+$border-radius__input: 2px;
+$border-radius__list: 10px;
+$border-radius__default: 20px;
+$border-radius__circle: 50%;
+
+$box-shadow__light: $colour-grey__shadow 0 4px 10px;
+$box-shadow__default: $colour-blue__shadow 0 15px 25px;

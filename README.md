@@ -1,2 +1,3 @@
-# basicsss.app--www
-The public (www) website for Basicsss.App
+# wrikified.com--www
+
+The public (www) website for wrikified.com

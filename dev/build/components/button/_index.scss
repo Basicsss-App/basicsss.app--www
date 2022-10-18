@@ -1,0 +1,31 @@
+// Copyright (c) 2022-present, Wrikified by Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- BUTTON ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-button-container {
+  input[type="submit"],
+  input[type="button"],
+  button {
+    background-color: $colour-green__default;
+    border: 0;
+    color: $colour-white__default;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-family__default;
+    font-size: $font-size__heading-5;
+    font-weight: 400;
+    padding: $spacing__default $spacing__default;
+    position: relative;
+    width: 100%;
+    &:hover {
+      background-color: $colour-blue__default;
+    }
+  }
+}
