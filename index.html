@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <meta content="True" name="HandheldFriendly" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="robots" content="index,follow" />
+    <title>Wrikified</title>
+    <meta
+      name="description"
+      content="Remove noise, make Wrike simple. Relies on Wrike, the most powerful work management software. BUT simplified for production teams."
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/dist/css/wrikified-www.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/dist/images/device/apple-touch-icon.png"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta property="og:type" content="website" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-        <meta content="True" name="HandheldFriendly" />
-        <meta name="googlebot" content="index,follow" />
-        <meta name="robots" content="index,follow" />
-        <title>Wrikified</title>
-        <meta name="description"
-            content="Remove noise, make Wrike simple. Relies on Wrike, the most powerful work management software. BUT simplified for production teams." />
-        <link type="text/css" rel="stylesheet" href="/dist/css/wrikified-www.min.css" />
-        <link rel="apple-touch-icon" href="/dist/images/device/apple-touch-icon.png">
-        <link rel="icon" href="favicon.ico" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <meta property="og:type" content="website" />
+    <!-- Sharing details  -->
+    <meta property="og:url" content="https://www.wrikified.com/" />
+    <meta property="og:title" content="Wrikified" />
+    <meta
+      property="og:description"
+      content="Remove noise, make Wrike simple. Relies on Wrike, the most powerful work management software. BUT simplified for production teams."
+    />
 
-        <!-- Sharing details  -->
-        <meta property="og:url" content="https://www.wrikified.com/" />
-        <meta property="og:title" content="Wrikified" />
-        <meta property="og:description"
-            content="Remove noise, make Wrike simple. Relies on Wrike, the most powerful work management software. BUT simplified for production teams." />
+    <!-- Libraries -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+    </style>
 
-        <!-- Libraries -->
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-        </style>
-
-        <!-- Schema Data -->
-        <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Wrikified",
-            "description": "Remove noise, make Wrike simple. Relies on Wrike, the most powerful work management software. BUT simplified for production teams.",
-            "logo": "https://www.wrikified.com/dist/images/brands/brand-logo-wrikified-app.jpg",
-            "url": "https://www.wrikified.com/",
-            "address": {
-                "@type": "PostalAddress",
-                "postalCode": "TW16 6AX",
-                "addressCountry": "United Kingdom"
-            }
+    <!-- Schema Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Wrikified",
+        "description": "Remove noise, make Wrike simple. Relies on Wrike, the most powerful work management software. BUT simplified for production teams.",
+        "logo": "https://www.wrikified.com/dist/images/brands/brand-logo-wrikified-app.jpg",
+        "url": "https://www.wrikified.com/",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "TW16 6AX",
+          "addressCountry": "United Kingdom"
         }
-        </script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9KJ4D564B"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+      }
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RKDQVS4XEL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+      gtag("config", "G-RKDQVS4XEL");
+    </script>
 
-            gtag('config', 'G-V9KJ4D564B');
-        </script>
+    <script id="mcjs">
+      !(function (c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/21adc29b65b5993940eead1c0/b9d22f84a3bc1b2ee16556b65.js"
+      );
+    </script>
+  </head>
 
-        <script
-            id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/21adc29b65b5993940eead1c0/b9d22f84a3bc1b2ee16556b65.js");</script>
-    </head>
-
-    <body>
-        <div class="wif-body-container">
-
-            <header class="wif-header-container">
-                <div class="wif-illustration-container _header">
-                    <div class="__contraints">
-                        <div class="__bkgrnd"></div>
-                        <div class="__fx">
-                            <div class="__shapes _s1"></div>
-                            <div class="__shapes _s2"></div>
-                        </div>
-                    </div>
-                </div>
-                <section class="wif-navigation-container wif-grid-container _column-nav _max-width__1000">
-                    <div class="__logo"></div>
-                    <!-- <div class="__nav">
+  <body>
+    <div class="wif-body-container">
+      <header class="wif-header-container">
+        <div class="wif-illustration-container _header">
+          <div class="__contraints">
+            <div class="__bkgrnd"></div>
+            <div class="__fx">
+              <div class="__shapes _s1"></div>
+              <div class="__shapes _s2"></div>
+            </div>
+          </div>
+        </div>
+        <section
+          class="wif-navigation-container wif-grid-container _column-nav _max-width__1000"
+        >
+          <div class="__logo"></div>
+          <!-- <div class="__nav">
                         <nav>
                             <ul class="_root">
                                 <li><a href="/features" class="_features"
@@ -90,214 +117,279 @@
                             </ul>
                         </nav>
                     </div> -->
-                </section>
-                <section class="wif-headline-container _max-width__1000">
-                    <h1 class="_text-align__center">Remove noise, make Wrike simple</h1>
-                    <h3 class="_text-align__center">Relies on Wrike, the most powerful work management
-                        software. <br /><strong>BUT
-                            simplified for production teams</strong>.</h3>
+        </section>
+        <section class="wif-headline-container _max-width__1000">
+          <h1 class="_text-align__center">Remove noise, make Wrike simple</h1>
+          <h3 class="_text-align__center">
+            Relies on Wrike, the most powerful work management software.
+            <br /><strong>BUT simplified for production teams</strong>.
+          </h3>
 
-                    <div class="wif-signup-container _max-width__600">
-                        <form
-                            action="https://wrikified.us21.list-manage.com/subscribe/post?u=21adc29b65b5993940eead1c0&amp;id=3b6582ae8b&amp;f_id=0069c2e1f0"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_self">
-                            <div class="wif-grid-container _column-signup">
-                                <input type="email" value="" name="EMAIL" class="__input required email" id="mce-EMAIL"
-                                    placeholder="Enter your email address..." required>
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_21adc29b65b5993940eead1c0_3b6582ae8b" tabindex="-1"
-                                        value="">
-                                </div>
-                                <div class="wif-button-container">
-                                    <input type="submit" value="Notify on Beta Launch" name="subscribe"
-                                        id="mc-embedded-subscribe" class="__button button">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-                <section class="wif-intro-container">
-                    <div class="wif-card-container wif-grid-container _column-four _column-gap__default">
-                        <div class="__card">
-                            <div class="__image _simple"></div>
-                            <div class="__copy">
-                                <h4>Made Simple</h4>
-                                <p>Clear & Clean Assigned Task Lists</p>
-                            </div>
-                        </div>
-                        <div class="__card">
-                            <div class="__image _productivity"></div>
-                            <div class="__copy">
-                                <h4>Increase Productivity</h4>
-                                <p>Remove Noise From Around Tasks</p>
-                            </div>
-                        </div>
-                        <div class="__card">
-                            <div class="__image _tech"></div>
-                            <div class="__copy">
-                                <h4>Accessible Anywhere</h4>
-                                <p>Built on 100% Web Based Technology</p>
-                            </div>
-                        </div>
-                        <div class="__card">
-                            <div class="__image _features"></div>
-                            <div class="__copy">
-                                <h4>Simplified Interface</h4>
-                                <p>Minimal Features, Reduced Confusion</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </header>
+          <div class="wif-signup-container _max-width__600">
+            <form
+              action="https://wrikified.us21.list-manage.com/subscribe/post?u=21adc29b65b5993940eead1c0&amp;id=3b6582ae8b&amp;f_id=0069c2e1f0"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_self"
+            >
+              <div class="wif-grid-container _column-signup">
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="__input required email"
+                  id="mce-EMAIL"
+                  placeholder="Enter your email address..."
+                  required
+                />
+                <div
+                  style="position: absolute; left: -5000px"
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_21adc29b65b5993940eead1c0_3b6582ae8b"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+                <div class="wif-button-container">
+                  <input
+                    type="submit"
+                    value="Notify on Beta Launch"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="__button button"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="wif-intro-container">
+          <div
+            class="wif-card-container wif-grid-container _column-four _column-gap__default"
+          >
+            <div class="__card">
+              <div class="__image _simple"></div>
+              <div class="__copy">
+                <h4>Made Simple</h4>
+                <p>Clear & Clean Assigned Task Lists</p>
+              </div>
+            </div>
+            <div class="__card">
+              <div class="__image _productivity"></div>
+              <div class="__copy">
+                <h4>Increase Productivity</h4>
+                <p>Remove Noise From Around Tasks</p>
+              </div>
+            </div>
+            <div class="__card">
+              <div class="__image _tech"></div>
+              <div class="__copy">
+                <h4>Accessible Anywhere</h4>
+                <p>Built on 100% Web Based Technology</p>
+              </div>
+            </div>
+            <div class="__card">
+              <div class="__image _features"></div>
+              <div class="__copy">
+                <h4>Simplified Interface</h4>
+                <p>Minimal Features, Reduced Confusion</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
 
-            <section class="wif-content-container">
-                <section class="__problem __problem-simple _max-width__1000">
-                    <div class="wif-grid-container _column-two _column-gap__large">
-                        <div class="__copy">
-                            <h2>Make Wrike simple, for your production team.</h2>
-                            <p>We know production teams don't need every feature Wrike has to offer. Production teams
-                                should be producing, not
-                                managing.</p>
-                            <p>Give your team a clear and clean assigned task list, and maybe a few sprinkles on top-
-                                that's it.</p>
-                        </div>
-                        <div class="__illustration">
-                            <div class="wif-illustration-container _features">
-                                <div class="__bkgrnd"></div>
-                                <div class="__fx">
-                                    <div data-value="feature-s1"></div>
-                                    <div data-value="feature-s2"></div>
-                                    <div data-value="bla-s1"></div>
-                                    <div data-value="bla-s2"></div>
-                                </div>
-                                <div class="__focus">
-                                    <ul>
-                                        <li>
-                                            <h4>View Assigned Tasks</h4>
-                                        </li>
-                                        <li>
-                                            <h4>Add Time Entries</h4>
-                                        </li>
-                                        <li>
-                                            <h4>Read Comments & Files</h4>
-                                        </li>
-                                        <li>
-                                            <h4>Complete Tasks</h4>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="__problem __problem-noise _max-width__1000">
-                    <div class="wif-grid-container _column-two _column-gap__large">
-                        <div class="__illustration">
-                            <div class="wif-illustration-container _productivity">
-                                <div class="__bkgrnd"></div>
-                                <div class="__fx"></div>
-                                <div class="__focus">
-                                    <ul>
-                                        <li>&#32;</li>
-                                        <li>&#32;</li>
-                                        <li>&#32;</li>
-                                        <li>&#32;</li>
-                                        <li>&#32;</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="__copy">
-                            <h2>Increase team productivity by removing noise around tasks.</h2>
-                            <p>It's common for teams to waste hours on searching for assigned tasks. Teams only need to
-                                understand what's required and
-                                by when.</p>
-                            <p>Remove search time and improve productivity, list only assigned tasks. It doesn't get any
-                                clearer.</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="__problem __problem-list _max-width__1000">
-                    <div class="wif-grid-container _column-two _column-gap__large">
-                        <div class="__copy">
-                            <h2>Teams will find it as simple as One, Two, Three.</h2>
-                            <p>It really is that simple. Your production teams will:</p>
-                            <ol>
-                                <li>
-                                    <p>See only assigned tasks, nothing more, nothing less,</p>
-                                </li>
-                                <li>
-                                    <p>Easily update Time Entries, Comments, and Statuses,</p>
-                                </li>
-                                <li>
-                                    <p>Never waste time searching for the next task, ever again!</p>
-                                </li>
-                            </ol>
-                        </div>
-                        <div class="__illustration">
-                            <div class="wif-illustration-container _simple">
-                                <div class="__bkgrnd"></div>
-                                <div class="__fx"></div>
-                                <div class="__focus">
-                                    <ul>
-                                        <li>&#32;</li>
-                                        <li>&#32;</li>
-                                        <li>&#32;</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="__problem __problem-tech _max-width__1000">
-                    <div class="__copy">
-                        <h2 class="_text-align__center">Accessible on every internet enabled web device, with no excuse.
-                        </h2>
-                        <p class="_text-align__center">Built using 100% web based technologies, access is available for
-                            Teams on any internet
-                            enabled mobile and desktop
-                            device. This ensures the continued enterprise-grade, industry-leading security, as you'd
-                            expect for your teams.</p>
-                    </div>
-                    <div class="wif-illustration-container _tech">
-                        <div class="__bkgrnd"></div>
-                        <div class="__fx"></div>
-                        <div class="__focus"></div>
-                    </div>
-                </section>
-            </section>
+      <section class="wif-content-container">
+        <section class="__problem __problem-simple _max-width__1000">
+          <div class="wif-grid-container _column-two _column-gap__large">
+            <div class="__copy">
+              <h2>Make Wrike simple, for your production team.</h2>
+              <p>
+                We know production teams don't need every feature Wrike has to
+                offer. Production teams should be producing, not managing.
+              </p>
+              <p>
+                Give your team a clear and clean assigned task list, and maybe a
+                few sprinkles on top- that's it.
+              </p>
+            </div>
+            <div class="__illustration">
+              <div class="wif-illustration-container _features">
+                <div class="__bkgrnd"></div>
+                <div class="__fx">
+                  <div data-value="feature-s1"></div>
+                  <div data-value="feature-s2"></div>
+                  <div data-value="bla-s1"></div>
+                  <div data-value="bla-s2"></div>
+                </div>
+                <div class="__focus">
+                  <ul>
+                    <li>
+                      <h4>View Assigned Tasks</h4>
+                    </li>
+                    <li>
+                      <h4>Add Time Entries</h4>
+                    </li>
+                    <li>
+                      <h4>Read Comments & Files</h4>
+                    </li>
+                    <li>
+                      <h4>Complete Tasks</h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="__problem __problem-noise _max-width__1000">
+          <div class="wif-grid-container _column-two _column-gap__large">
+            <div class="__illustration">
+              <div class="wif-illustration-container _productivity">
+                <div class="__bkgrnd"></div>
+                <div class="__fx"></div>
+                <div class="__focus">
+                  <ul>
+                    <li>&#32;</li>
+                    <li>&#32;</li>
+                    <li>&#32;</li>
+                    <li>&#32;</li>
+                    <li>&#32;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="__copy">
+              <h2>
+                Increase team productivity by removing noise around tasks.
+              </h2>
+              <p>
+                It's common for teams to waste hours on searching for assigned
+                tasks. Teams only need to understand what's required and by
+                when.
+              </p>
+              <p>
+                Remove search time and improve productivity, list only assigned
+                tasks. It doesn't get any clearer.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="__problem __problem-list _max-width__1000">
+          <div class="wif-grid-container _column-two _column-gap__large">
+            <div class="__copy">
+              <h2>Teams will find it as simple as One, Two, Three.</h2>
+              <p>It really is that simple. Your production teams will:</p>
+              <ol>
+                <li>
+                  <p>See only assigned tasks, nothing more, nothing less,</p>
+                </li>
+                <li>
+                  <p>Easily update Time Entries, Comments, and Statuses,</p>
+                </li>
+                <li>
+                  <p>
+                    Never waste time searching for the next task, ever again!
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div class="__illustration">
+              <div class="wif-illustration-container _simple">
+                <div class="__bkgrnd"></div>
+                <div class="__fx"></div>
+                <div class="__focus">
+                  <ul>
+                    <li>&#32;</li>
+                    <li>&#32;</li>
+                    <li>&#32;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="__problem __problem-tech _max-width__1000">
+          <div class="__copy">
+            <h2 class="_text-align__center">
+              Accessible on every internet enabled web device, with no excuse.
+            </h2>
+            <p class="_text-align__center">
+              Built using 100% web based technologies, access is available for
+              Teams on any internet enabled mobile and desktop device. This
+              ensures the continued enterprise-grade, industry-leading security,
+              as you'd expect for your teams.
+            </p>
+          </div>
+          <div class="wif-illustration-container _tech">
+            <div class="__bkgrnd"></div>
+            <div class="__fx"></div>
+            <div class="__focus"></div>
+          </div>
+        </section>
+      </section>
 
-            <section class="wif-prefooter-container">
-                <section class="wif-headline-container _max-width__1000">
-                    <h1 class="_text-align__center">Start supporting your production team<br />in a way they'll
-                        appreciate.
-                    </h1>
-                    <h3 class="_text-align__center">Activate your teams 30 day trial today, you won't look back.</h3>
-                    <div class="wif-signup-container _max-width__600">
-                        <form
-                            action="https://wrikified.us21.list-manage.com/subscribe/post?u=21adc29b65b5993940eead1c0&amp;id=3b6582ae8b&amp;f_id=0069c2e1f0"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_self">
-                            <div class="wif-grid-container _column-signup">
-                                <input type="email" value="" name="EMAIL" class="__input required email" id="mce-EMAIL"
-                                    placeholder="Enter your email address..." required>
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_21adc29b65b5993940eead1c0_3b6582ae8b" tabindex="-1"
-                                        value="">
-                                </div>
-                                <div class="wif-button-container">
-                                    <input type="submit" value="Notify on Beta Launch" name="subscribe"
-                                        id="mc-embedded-subscribe" class="__button button">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-            </section>
+      <section class="wif-prefooter-container">
+        <section class="wif-headline-container _max-width__1000">
+          <h1 class="_text-align__center">
+            Start supporting your production team<br />in a way they'll
+            appreciate.
+          </h1>
+          <h3 class="_text-align__center">
+            Activate your teams 30 day trial today, you won't look back.
+          </h3>
+          <div class="wif-signup-container _max-width__600">
+            <form
+              action="https://wrikified.us21.list-manage.com/subscribe/post?u=21adc29b65b5993940eead1c0&amp;id=3b6582ae8b&amp;f_id=0069c2e1f0"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_self"
+            >
+              <div class="wif-grid-container _column-signup">
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="__input required email"
+                  id="mce-EMAIL"
+                  placeholder="Enter your email address..."
+                  required
+                />
+                <div
+                  style="position: absolute; left: -5000px"
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_21adc29b65b5993940eead1c0_3b6582ae8b"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+                <div class="wif-button-container">
+                  <input
+                    type="submit"
+                    value="Notify on Beta Launch"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="__button button"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </section>
 
-            <footer class="wif-footer-container">
-                <!-- <section class="__links _max-width__1000">
+      <footer class="wif-footer-container">
+        <!-- <section class="__links _max-width__1000">
                     <div class="wif-grid-container _column-four">
                         <div class="__links-product">
                             <h5>Product</h5>
@@ -339,21 +431,25 @@
                         </div>
                     </div>
                 </section> -->
-                <section class="__copyright _max-width__1000">
-                    <div class="wif-grid-container _column-nav">
-                        <div class="__logo"></div>
-                        <div class="__copy">
-                            <p>© 2022 Wrikified by Chris Watterston. All rights reserved</p>
-                            <p><a href="#" title="View out Privacy Policy">Privacy Policy</a> - <a href="#"
-                                    title="View our Terms of Service">Terms of Service</a> - <a href="#"
-                                    title="View our Cookie Policy and Preferences">Cookie Policy Preferences</a></p>
-                        </div>
-                    </div>
-                </section>
-            </footer>
-
-        </div>
-
-    </body>
-
+        <section class="__copyright _max-width__1000">
+          <div class="wif-grid-container _column-nav">
+            <div class="__logo"></div>
+            <div class="__copy">
+              <p>© 2022 Wrikified by Chris Watterston. All rights reserved</p>
+              <p>
+                <a href="#" title="View out Privacy Policy">Privacy Policy</a> -
+                <a href="#" title="View our Terms of Service"
+                  >Terms of Service</a
+                >
+                -
+                <a href="#" title="View our Cookie Policy and Preferences"
+                  >Cookie Policy Preferences</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>

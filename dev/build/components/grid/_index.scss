@@ -14,9 +14,15 @@
   grid-template-rows: auto;
   &._column-nav {
     grid-template-columns: min-content 1fr;
+    @include mixinResponsive("mobile") {
+      grid-template-columns: 1fr;
+    }
   }
   &._column-signup {
     grid-template-columns: 1fr min-content;
+    @include mixinResponsive("mobile") {
+      grid-template-columns: 1fr;
+    }
   }
   &._column-two {
     grid-template-columns: repeat(2, 1fr [col-start]);
@@ -28,6 +34,7 @@
     grid-template-columns: repeat(4, 1fr [col-start]);
     @include mixinResponsive("wide-mobile") {
       grid-template-columns: repeat(2, 1fr [col-start]);
+      row-gap: $spacing__default;
     }
     @include mixinResponsive("mobile") {
       grid-template-columns: repeat(1, 1fr [col-start]);
@@ -35,9 +42,18 @@
   }
   &._column-gap__default {
     column-gap: ($spacing__default * 2);
+    @include mixinResponsive("tablet") {
+      column-gap: $spacing__default;
+    }
   }
   &._column-gap__large {
     column-gap: ($spacing__default * 5.5);
+    @include mixinResponsive("tablet") {
+      column-gap: ($spacing__default * 2);
+    }
+    @include mixinResponsive("wide-mobile") {
+      column-gap: $spacing__default;
+    }
   }
 }
 

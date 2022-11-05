@@ -47,11 +47,34 @@
 .#{$prefix-name}-headline-container {
   padding-bottom: $spacing__large;
   padding-top: $spacing__medium;
+  @include mixinResponsive("tablet") {
+    padding-right: ($spacing__default * 2);
+    padding-left: ($spacing__default * 2);
+  }
+  @include mixinResponsive("mobile") {
+    padding-bottom: ($spacing__large / 2);
+    padding-top: ($spacing__medium / 2);
+  }
+  @include mixinResponsive("narrow-mobile") {
+    padding-right: $spacing__default;
+    padding-left: $spacing__default;
+    padding-bottom: ($spacing__medium / 1.5);
+  }
 }
 
 .#{$prefix-name}-intro-container {
   padding-bottom: $spacing__medium;
   .__card {
+    @include mixinResponsive("wide-mobile") {
+      &:nth-child(2) {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+      &:nth-child(3) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
     &:first-child {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
@@ -67,13 +90,42 @@
   background: $colour-gradient__blue-light;
   padding-bottom: $spacing__medium;
   padding-top: $spacing__large;
+  @include mixinResponsive("tablet") {
+    padding-right: ($spacing__default * 2);
+    padding-left: ($spacing__default * 2);
+  }
+  @include mixinResponsive("mobile") {
+    padding-bottom: ($spacing__large / 2);
+    padding-top: ($spacing__medium / 1.5);
+  }
+  @include mixinResponsive("narrow-mobile") {
+    padding-right: $spacing__default;
+    padding-left: $spacing__default;
+    padding-top: ($spacing__medium + 60px);
+  }
   .__problem {
     padding-bottom: $spacing__medium;
     position: relative;
     z-index: 1;
+    @include mixinResponsive("wide-mobile") {
+      ._column-two {
+        grid-template-columns: repeat(1, 1fr [col-start]);
+      }
+    }
+    @include mixinResponsive("wide-mobile") {
+      &:nth-child(1) {
+        padding-bottom: ($spacing__large - 30px);
+      }
+      &:nth-child(2) {
+        padding-bottom: $spacing__large;
+      }
+    }
     &.__problem-tech,
     &.__problem-tech .__copy {
       padding: ($spacing__default * 2) !important;
+      @include mixinResponsive("narrow-mobile") {
+        padding: $spacing__default !important;
+      }
     }
     .__copy {
       p {

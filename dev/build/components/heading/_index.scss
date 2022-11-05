@@ -25,18 +25,27 @@ h1 {
   font-size: $font-size__heading-1;
   font-weight: 900;
   margin-bottom: $spacing__default;
+  @include mixinResponsive("mobile") {
+    font-size: calc($font-size__heading-1 - 50%);
+  }
 }
 
 h2 {
   font-size: $font-size__heading-2;
   font-weight: 700;
   margin-bottom: $spacing__default;
+  @include mixinResponsive("mobile") {
+    font-size: calc($font-size__heading-2 - 50%);
+  }
 }
 
 h3 {
   font-size: $font-size__heading-3;
   font-weight: 300;
   margin-bottom: $spacing__default;
+  @include mixinResponsive("mobile") {
+    font-size: calc($font-size__heading-3 - 30%);
+  }
 }
 
 h4 {

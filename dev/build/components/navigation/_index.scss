@@ -13,6 +13,14 @@
   padding: $spacing__default 0;
   position: relative;
   width: 100%;
+  @include mixinResponsive("tablet") {
+    padding-right: ($spacing__default * 2);
+    padding-left: ($spacing__default * 2);
+  }
+  @include mixinResponsive("narrow-mobile") {
+    padding-right: $spacing__default;
+    padding-left: $spacing__default;
+  }
   .__nav {
     ul {
       padding: 0;

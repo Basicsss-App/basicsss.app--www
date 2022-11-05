@@ -41,6 +41,9 @@
   padding: $spacing__default;
   position: relative;
   width: 100%;
+  @include mixinResponsive("mobile") {
+    text-align: center;
+  }
 }
 
 label {

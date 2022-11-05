@@ -12,7 +12,6 @@
 .#{$prefix-name}-prefooter-container {
   background-color: $colour-blue__default;
   padding-bottom: ($spacing__default * 3);
-
   & > section {
     background-image: url(#{$path-images}shapes/group-shape-signup.svg);
     background-position-x: center;
@@ -28,6 +27,10 @@
   padding: ($spacing__default * 4) 0 ($spacing__default * 2);
   position: relative;
   width: 100%;
+  @include mixinResponsive("tablet") {
+    padding-right: ($spacing__default * 2);
+    padding-left: ($spacing__default * 2);
+  }
   .__links {
     margin-bottom: ($spacing__default * 4);
     ul {
@@ -50,6 +53,9 @@
       margin-bottom: 0;
       text-align: right;
       color: $colour-grey__dark;
+      @include mixinResponsive("mobile") {
+        text-align: center;
+      }
     }
   }
   .__logo {
@@ -61,5 +67,9 @@
     height: 25px;
     position: relative;
     width: 110px;
+    @include mixinResponsive("mobile") {
+      width: 100%;
+      margin-bottom: $spacing__default;
+    }
   }
 }
