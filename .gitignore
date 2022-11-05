@@ -1,7 +1,7 @@
 # Output LOGS data files
-/--logs/*
-/--logs/access_log
-/--logs/error_log
+/logs/*
+/logs/access_log
+/logs/error_log
 *.log
 
 # Sitemap
