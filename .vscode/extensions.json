@@ -1,11 +1,11 @@
 {
-    "recommendations": [
-        // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
-        "bmewburn.vscode-intelephense-client",
-        "eamodio.gitlens",
-        "esbenp.prettier-vscode",
-        "natemoo-re.vscode-stencil-tools",
-        "streetsidesoftware.code-spell-checker",
-        "ue.alphabetical-sorter"
-    ]
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "natemoo-re.vscode-stencil-tools",
+    "streetsidesoftware.code-spell-checker",
+    "ue.alphabetical-sorter",
+    "formulahendry.vscode-mysql"
+  ]
 }

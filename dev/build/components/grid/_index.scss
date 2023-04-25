@@ -30,6 +30,12 @@
       grid-template-columns: repeat(1, 1fr [col-start]);
     }
   }
+  &._column-three {
+    grid-template-columns: repeat(3, 1fr [col-start]);
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
+  }
   &._column-four {
     grid-template-columns: repeat(4, 1fr [col-start]);
     @include mixinResponsive("wide-mobile") {

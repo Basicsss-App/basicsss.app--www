@@ -1,3 +1,6 @@
+# Ignore client secrets/auth
+# config/vars.secret.php
+
 # Output LOGS data files
 /logs/*
 /logs/access_log
@@ -32,4 +35,6 @@ Thumbs.db
 *.avi
 *.flv
 *.mov
-*.wmv
+
+# SendGrid
+*.wmvsendgrid.env

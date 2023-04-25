@@ -13,7 +13,6 @@
 // ----------
 //
 $font-family__default: "Roboto", sans-serif;
-$font-family__heading: "Asap", sans-serif;
 
 $font-size__xsmall: 0.625rem; // 0.625rem = 10px;
 $font-size__small: 0.88rem; // 0.875= 14px;
@@ -75,6 +74,9 @@ $colour-pink__default: rgba(255, 159, 229, 1);
 
 // Red
 $colour-red__default: rgba(255, 133, 141, 1);
+
+// Orange
+$colour-secondary__orange: rgba(239, 153, 80, 1); // Orange // #EF9950
 
 // Grey
 $colour-grey__light: rgba(244, 244, 244, 1);

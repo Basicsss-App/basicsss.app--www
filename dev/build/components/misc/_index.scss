@@ -1,6 +1,9 @@
 // Copyright (c) 2022-present, Wrikified by Chris Watterston. All rights reserved.
 // #{$prefix-name}
 
+// Modules
+@use "sass:math";
+
 //
 // ------------------------------------------------------------
 // ------------------------------------------------------------
@@ -29,19 +32,23 @@
 .#{$prefix-name}-intro-container,
 .#{$prefix-name}-content-container,
 .#{$prefix-name}-prefooter-container,
-.#{$prefix-name}-footer-container {
+.#{$prefix-name}-footer-container,
+.#{$prefix-name}-body-breakingwave-container,
+.#{$prefix-name}-prefooter-breakingwave-container {
   position: relative;
   width: 100%;
 }
 
 .#{$prefix-name}-body-container {
+  background: $colour-blue__default;
   overflow: hidden;
 }
 
 .#{$prefix-name}-header-container {
   background: $colour-gradient__blue-green;
-  z-index: 1;
+  padding-bottom: $spacing__medium;
   padding-top: $spacing__default;
+  z-index: 1;
 }
 
 .#{$prefix-name}-headline-container {
@@ -52,13 +59,42 @@
     padding-left: ($spacing__default * 2);
   }
   @include mixinResponsive("mobile") {
-    padding-bottom: ($spacing__large / 2);
-    padding-top: ($spacing__medium / 2);
+    padding-bottom: math.div($spacing__large, 2);
+    padding-top: math.div($spacing__medium, 2);
   }
   @include mixinResponsive("narrow-mobile") {
     padding-right: $spacing__default;
     padding-left: $spacing__default;
-    padding-bottom: ($spacing__medium / 1.5);
+    padding-bottom: math.div($spacing__medium, 1.5);
+  }
+  h1:first-of-type {
+    font-weight: 500;
+    margin-bottom: 0;
+    span {
+      font-weight: 400;
+    }
+  }
+  .__cta {
+    margin: calc($spacing__default * 2) 0;
+  }
+  .__benefits {
+    background-color: $colour-blue__default;
+    border-radius: 100px;
+    margin: 0 auto;
+    padding: $spacing__default 30px;
+    width: fit-content;
+    section {
+      background-image: url(#{$path-images}icons/icon-tick-solid-green.svg);
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 40px 40px;
+      padding-left: 55px;
+      p,
+      h3 {
+        font-weight: 500;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -86,17 +122,38 @@
   }
 }
 
+.#{$prefix-name}-body-breakingwave-container {
+  background-image: url(#{$path-images}backgrounds/bkgrnd-body-breakingwave-before.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  margin-top: -400px;
+  pointer-events: none;
+  z-index: 3;
+}
+
 .#{$prefix-name}-content-container {
   background: $colour-gradient__blue-light;
-  padding-bottom: $spacing__medium;
-  padding-top: $spacing__large;
+  margin-top: -295px;
+  padding-bottom: $spacing__large;
+  padding-top: calc($spacing__large * 1.4);
+  z-index: 2;
+
+  -webkit-mask-image: url(#{$path-images}backgrounds/bkgrnd-body-breakingwave-mask.svg);
+  -webkit-mask-position: center top;
+  -webkit-mask-size: cover;
+  mask-image: url(#{$path-images}backgrounds/bkgrnd-body-breakingwave-mask.svg);
+  mask-position: center top;
+  mask-size: cover;
+
   @include mixinResponsive("tablet") {
     padding-right: ($spacing__default * 2);
     padding-left: ($spacing__default * 2);
   }
   @include mixinResponsive("mobile") {
-    padding-bottom: ($spacing__large / 2);
-    padding-top: ($spacing__medium / 1.5);
+    padding-bottom: math.div($spacing__large, 2);
+    padding-top: math.div($spacing__medium, 1.5);
   }
   @include mixinResponsive("narrow-mobile") {
     padding-right: $spacing__default;
@@ -177,4 +234,28 @@
     position: relative;
     z-index: +1;
   }
+}
+
+.#{$prefix-name}-prefooter-breakingwave-container {
+  background-image: url(#{$path-images}backgrounds/bkgrnd-prefooter-breakingwave-before.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 180px;
+  margin-top: -250px;
+  pointer-events: none !important;
+  z-index: 3;
+}
+
+.#{$prefix-name}-prefooter-container {
+  margin-top: -135px;
+  padding-top: $spacing__default;
+  z-index: 2;
+
+  -webkit-mask-image: url(#{$path-images}backgrounds/bkgrnd-prefooter-breakingwave-mask.svg);
+  -webkit-mask-position: center top;
+  -webkit-mask-size: cover;
+  mask-image: url(#{$path-images}backgrounds/bkgrnd-prefooter-breakingwave-mask.svg);
+  mask-position: center top;
+  mask-size: cover;
 }
