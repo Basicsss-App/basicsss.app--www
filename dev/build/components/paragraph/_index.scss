@@ -12,9 +12,11 @@
 // ----------
 // ----------
 //
-p {
+p,
+ul,
+li {
   color: $colour-white__default;
-  font-family: $font-family__default;
+  font-family: $font-family__primary;
   font-size: $font-size__default;
   font-weight: 400;
   line-height: calc($font-size__default + 40%);
@@ -58,7 +60,7 @@ blockquote {
 }
 
 ::marker {
-  font-family: $font-family__default;
+  font-family: $font-family__primary;
 }
 
 //
@@ -74,7 +76,7 @@ a:hover,
 a:active,
 a:visited {
   color: $colour-white__default;
-  font-family: $font-family__default;
+  font-family: $font-family__primary;
   font-size: $font-size__default;
   font-weight: 400;
   text-decoration: underline;

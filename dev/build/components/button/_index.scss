@@ -19,7 +19,7 @@
     color: $colour-white__default;
     cursor: pointer;
     display: inline-block;
-    font-family: $font-family__default;
+    font-family: $font-family__primary;
     font-size: $font-size__heading-5;
     font-weight: 400;
     padding: $spacing__default $spacing__default;
@@ -63,6 +63,16 @@
       border: 2px solid $colour-white__default;
       color: $colour-white__default;
       margin-left: 5px;
+    }
+    &.-green {
+      background-color: $colour-green__default;
+      border: 2px solid $colour-green__default;
+      color: $colour-white__default;
+      margin-left: 5px;
+    }
+    &.-full {
+      display: block;
+      text-align: center;
     }
   }
 }

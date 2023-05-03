@@ -10,7 +10,7 @@
 // ----------
 //
 .#{$prefix-name}-navigation-container {
-  padding: $spacing__default 0;
+  padding: calc($spacing__default * 2) 0 $spacing__default;
   position: relative;
   width: 100%;
   @include mixinResponsive("tablet") {

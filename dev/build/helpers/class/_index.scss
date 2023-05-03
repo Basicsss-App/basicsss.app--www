@@ -19,6 +19,10 @@
   margin: 0 auto;
   max-width: $column-one__max;
 }
+._max-width__800 {
+  margin: 0 auto;
+  max-width: $column-one__800;
+}
 ._max-width__600 {
   max-width: $column-one__600;
 }
@@ -39,12 +43,20 @@
   text-align: right;
 }
 
+._text-align__left {
+  text-align: left;
+}
+
 ._font-family__DP {
   font-family: "DynaPuff", cursive;
 }
 
 ._font-family__RD {
   font-family: "Rubik Dirt", cursive;
+}
+
+._font-size__secondary {
+  font-size: $font-size__secondary;
 }
 
 //

@@ -46,6 +46,12 @@
       grid-template-columns: repeat(1, 1fr [col-start]);
     }
   }
+  &.-column__min-min {
+    // align-items: center;
+    column-gap: $spacing__small;
+    grid-template-columns: min-content min-content;
+    justify-items: center;
+  }
   &._column-gap__default {
     column-gap: ($spacing__default * 2);
     @include mixinResponsive("tablet") {
