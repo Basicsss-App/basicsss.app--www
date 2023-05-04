@@ -14,21 +14,32 @@
   position: relative;
   width: 100%;
   @include mixinResponsive("tablet") {
-    padding-right: ($spacing__default * 2);
-    padding-left: ($spacing__default * 2);
+    padding-right: $spacing__default;
+    padding-left: $spacing__default;
   }
   @include mixinResponsive("narrow-mobile") {
     padding-right: $spacing__default;
     padding-left: $spacing__default;
+    padding-top: calc($spacing__default * 1.4);
   }
   .__nav {
+    @include mixinResponsive("narrow-mobile") {
+      //   border: 1px solid red;
+    }
     ul {
       padding: 0;
       text-align: right;
       &._root {
+        @include mixinResponsive("mobile") {
+          margin-bottom: 0;
+        }
         li {
           display: inline-block;
           margin-left: $spacing__small;
+          @include mixinResponsive("mobile") {
+            margin-left: 0;
+            margin-bottom: 0;
+          }
           a {
             display: block;
             font-weight: 500;
@@ -41,12 +52,21 @@
   }
   .__logo {
     background-image: url(#{$path-images}brands/brand-logo-wrikified-full.svg);
-    background-position-x: center;
+    background-position-x: left;
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 40px;
     position: relative;
     width: 208px;
+    @include mixinResponsive("mobile") {
+      height: 30px;
+      width: 120px;
+    }
+    // @include mixinResponsive("narrow-mobile") {
+    //   background-position-x: center;
+    //   width: 100%;
+    //   margin-bottom: $spacing__small;
+    // }
   }
 }

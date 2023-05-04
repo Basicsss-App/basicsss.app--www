@@ -63,9 +63,10 @@
     padding-top: math.div($spacing__medium, 2);
   }
   @include mixinResponsive("narrow-mobile") {
+    padding-top: $spacing__default;
     padding-right: $spacing__default;
     padding-left: $spacing__default;
-    padding-bottom: math.div($spacing__medium, 1.5);
+    padding-bottom: $spacing__large;
   }
   h1:first-of-type {
     font-weight: 500;
@@ -76,6 +77,9 @@
   }
   .__cta {
     margin: calc($spacing__default * 2) 0;
+    @include mixinResponsive("narrow-mobile") {
+      margin: $spacing__default 0;
+    }
   }
   .__benefits {
     background-color: $colour-blue__default;
@@ -83,6 +87,9 @@
     margin: 0 auto;
     padding: $spacing__default 30px;
     width: fit-content;
+    @include mixinResponsive("narrow-mobile") {
+      border-radius: 30px;
+    }
     section {
       background-image: url(#{$path-images}icons/icon-tick-solid-green.svg);
       background-position: left center;
@@ -91,6 +98,12 @@
       margin: 0 auto;
       padding-left: 55px;
       width: fit-content;
+      @include mixinResponsive("narrow-mobile") {
+        background-size: 36px 36px;
+        margin-bottom: $spacing__small;
+        padding-left: 50px;
+        width: 100%;
+      }
       p,
       h3 {
         margin: 0;
@@ -238,6 +251,9 @@
   margin-top: -400px;
   pointer-events: none;
   z-index: 3;
+  @include mixinResponsive("narrow-mobile") {
+    height: 230px;
+  }
 }
 
 .#{$prefix-name}-content-container {
@@ -259,13 +275,13 @@
     padding-left: ($spacing__default * 2);
   }
   @include mixinResponsive("mobile") {
-    padding-bottom: math.div($spacing__large, 2);
+    // padding-bottom: math.div($spacing__large, 2);
     padding-top: math.div($spacing__medium, 1.5);
   }
   @include mixinResponsive("narrow-mobile") {
     padding-right: $spacing__default;
     padding-left: $spacing__default;
-    padding-top: ($spacing__medium + 60px);
+    padding-top: ($spacing__large + $spacing__medium);
   }
   .__problem {
     padding-bottom: $spacing__medium;
@@ -365,4 +381,7 @@
   mask-image: url(#{$path-images}backgrounds/bkgrnd-prefooter-breakingwave-mask.svg);
   mask-position: center top;
   mask-size: cover;
+  @include mixinResponsive("narrow-mobile") {
+    padding-top: calc($spacing__default * 4);
+  }
 }

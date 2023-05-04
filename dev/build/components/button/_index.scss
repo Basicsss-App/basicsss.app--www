@@ -45,6 +45,7 @@
     color: $colour-white__default;
     cursor: pointer;
     display: inline-block;
+    margin-bottom: $spacing__small;
     padding: calc($spacing__small * 1.3) 35px;
     text-decoration: none;
     // States
@@ -67,6 +68,12 @@
     &.-green {
       background-color: $colour-green__default;
       border: 2px solid $colour-green__default;
+      color: $colour-white__default;
+      margin-left: 5px;
+    }
+    &.-pink {
+      background-color: $colour-pink__default;
+      border: 2px solid $colour-pink__default;
       color: $colour-white__default;
       margin-left: 5px;
     }

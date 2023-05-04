@@ -15,8 +15,11 @@
   &._column-nav {
     grid-template-columns: min-content 1fr;
     @include mixinResponsive("mobile") {
-      grid-template-columns: 1fr;
+      grid-template-columns: min-content 1fr;
     }
+    // @include mixinResponsive("narrow-mobile") {
+    //   grid-template-columns: 1fr;
+    // }
   }
   &._column-signup {
     grid-template-columns: 1fr min-content;

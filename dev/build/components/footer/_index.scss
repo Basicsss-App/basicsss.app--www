@@ -28,8 +28,8 @@
   position: relative;
   width: 100%;
   @include mixinResponsive("tablet") {
-    padding-right: ($spacing__default * 2);
-    padding-left: ($spacing__default * 2);
+    padding-right: ($spacing__default);
+    padding-left: ($spacing__default);
   }
   .__links {
     margin-bottom: ($spacing__default * 4);
@@ -54,7 +54,7 @@
       text-align: right;
       color: $colour-grey__dark;
       @include mixinResponsive("mobile") {
-        text-align: center;
+        text-align: right;
       }
     }
   }
@@ -68,7 +68,7 @@
     position: relative;
     width: 110px;
     @include mixinResponsive("mobile") {
-      width: 100%;
+      width: 110px;
       margin-bottom: $spacing__default;
     }
   }

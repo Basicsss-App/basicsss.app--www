@@ -87,6 +87,9 @@ a:visited {
     color: $colour-black__dark;
     font-weight: 500 !important;
     padding: $spacing__small ($spacing__default * 1.8) !important;
+    @include mixinResponsive("mobile") {
+      padding: calc($spacing__small - 3px) calc($spacing__small * 1.5) !important;
+    }
     i {
       background-image: url(#{$path-images}brands/brand-logo-wrike-full.svg);
       background-position: center center;
@@ -97,6 +100,11 @@ a:visited {
       margin-bottom: -5px;
       margin-left: 3px;
       width: 94px;
+      @include mixinResponsive("mobile") {
+        height: 20px;
+        margin-left: 0;
+        width: 80px;
+      }
     }
   }
 }
