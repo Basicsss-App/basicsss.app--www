@@ -133,14 +133,16 @@ ol {
   }
 }
 
-ul {
-  margin-left: $spacing__default;
-  li {
-    margin-bottom: unset;
-    padding-bottom: unset;
-    padding-left: 5px;
-    p {
-      margin: 0;
+.-legalpage {
+  ul {
+    margin-left: $spacing__default;
+    li {
+      margin-bottom: unset;
+      padding-bottom: unset;
+      padding-left: 5px;
+      p {
+        margin: 0;
+      }
     }
   }
 }
