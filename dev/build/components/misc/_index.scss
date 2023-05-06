@@ -216,6 +216,9 @@
   &.-subpage {
     padding-top: $spacing__default;
   }
+  &.-legalpage {
+    padding-bottom: unset;
+  }
 }
 
 .#{$prefix-name}-intro-container {
