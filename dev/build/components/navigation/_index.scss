@@ -59,6 +59,11 @@
     height: 40px;
     position: relative;
     width: 208px;
+    a.__home-ahref {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
     @include mixinResponsive("mobile") {
       height: 30px;
       width: 120px;
