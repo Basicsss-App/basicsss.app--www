@@ -127,8 +127,30 @@ ol {
   li {
     padding-bottom: 2px;
     padding-left: 5px;
+    margin: 0;
     p {
       margin: 0;
+    }
+  }
+}
+
+.__onetwothree {
+  list-style: none;
+  li {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    padding-top: 2px;
+    &:nth-child(1) {
+      background-image: url(#{$path-images}icons/icon-number-1-solid-green.svg);
+    }
+    &:nth-child(2) {
+      background-image: url(#{$path-images}icons/icon-number-2-solid-green.svg);
+    }
+    &:nth-child(3) {
+      background-image: url(#{$path-images}icons/icon-number-3-solid-green.svg);
     }
   }
 }
