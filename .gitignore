@@ -7,10 +7,6 @@
 /logs/error_log
 *.log
 
-# Sitemap
-/sitemap.xml
-/sitemap.xml.gz
-
 # Composer
 vendor/*
 
