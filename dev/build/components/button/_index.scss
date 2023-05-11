@@ -43,7 +43,7 @@
     background-color: $colour-secondary__orange;
     border-radius: $border-radius__list;
     border: 2px solid $colour-secondary__orange;
-    color: $colour-white__default;
+    color: $colour-blue__default;
     cursor: pointer;
     display: inline-block;
     font-family: $font-family__primary;
@@ -70,13 +70,13 @@
     &.-green {
       background-color: $colour-green__default;
       border: 2px solid $colour-green__default;
-      color: $colour-white__default;
+      color: $colour-blue__default;
       margin-left: 5px;
     }
     &.-pink {
       background-color: $colour-pink__default;
       border: 2px solid $colour-pink__default;
-      color: $colour-white__default;
+      color: $colour-blue__default;
       margin-left: 5px;
     }
     &.-full {
