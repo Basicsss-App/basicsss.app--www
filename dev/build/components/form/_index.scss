@@ -8,62 +8,69 @@
 // ------------------------------------------------------------
 // ------------------------------------------------------------
 // ------------------------------------------------------------
-// ---------- FORMS  ----------
-// ----------
-// ----------
-//
-.#{$prefix-name}-signup-container {
-  border-radius: $border-radius__input;
-  box-shadow: $box-shadow__default;
-  margin: $spacing__default auto 0;
-  overflow: hidden;
-  position: relative;
-  .#{$prefix-name}-button-container {
-    margin-left: -2px;
-  }
-}
-
-//
-// ------------------------------------------------------------
-// ------------------------------------------------------------
-// ------------------------------------------------------------
 // ---------- INPUT  ----------
 // ----------
 // ----------
 //
-.__input,
-.__textarea {
-  border: 0;
-  color: $colour-blue__default;
-  font-family: $font-family__primary;
-  font-size: $font-size__default;
-  font-size: $font-size__heading-5;
-  padding: $spacing__default;
-  position: relative;
-  width: 100%;
-  @include mixinResponsive("mobile") {
-    text-align: center;
+.#{$prefix-name}-form-container {
+  .__input,
+  .__textarea {
+    border-radius: $spacing__small;
+    border: 0;
+    color: $colour-blue__default;
+    font-family: $font-family__primary;
+    font-size: $font-size__default;
+    margin-bottom: 5px;
+    padding: 14px;
+    position: relative;
+    width: 100%;
   }
-}
 
-label {
-  color: $colour-white__default;
-  display: block;
-  font-family: $font-family__primary;
-  font-size: $font-size__xsmall;
-  padding: 0 0 3px;
-  text-transform: uppercase;
-}
+  label {
+    color: $colour-white__default;
+    display: block;
+    font-family: $font-family__primary;
+    font-size: $font-size__default;
+    padding: 0 0 3px;
+    text-transform: uppercase;
+  }
 
-::-webkit-input-placeholder {
-  color: $colour-blue__default;
-  font-size: $font-size__heading-5;
-}
-::-moz-placeholder {
-  color: $colour-blue__default;
-  font-size: $font-size__heading-5;
-}
-::-ms-input-placeholder {
-  color: $colour-blue__default;
-  font-size: $font-size__heading-5;
+  .__form-row {
+    margin-bottom: $spacing__small;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $colour-blue__default;
+    font-size: $font-size__heading-5;
+  }
+  ::-moz-placeholder {
+    color: $colour-blue__default;
+    font-size: $font-size__heading-5;
+  }
+  ::-ms-input-placeholder {
+    color: $colour-blue__default;
+    font-size: $font-size__heading-5;
+  }
+
+  //
+  // ------------------------------------------------------------
+  // ------------------------------------------------------------
+  // ------------------------------------------------------------
+  // ---------- KWESFORMS ----------
+  // ----------
+  // ----------
+  //
+  small.kw-field-error-message,
+  .kw-alert {
+    font-family: $font-family__primary;
+    font-size: $font-size__default;
+  }
+
+  small.kw-field-error-message {
+    background-color: #ff3852;
+    border-radius: 0 0 $spacing__small $spacing__small;
+    color: $colour-white__default;
+    margin-top: -15px;
+    padding: $spacing__default $spacing__small $spacing__small $spacing__small;
+  }
 }

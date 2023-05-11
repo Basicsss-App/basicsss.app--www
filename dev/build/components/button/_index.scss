@@ -13,6 +13,7 @@
   input[type="submit"],
   input[type="button"],
   button,
+  button.__button,
   a.__button {
     background-color: $colour-green__default;
     border: 0;
@@ -45,6 +46,7 @@
     color: $colour-white__default;
     cursor: pointer;
     display: inline-block;
+    font-family: $font-family__primary;
     margin-bottom: $spacing__small;
     padding: calc($spacing__small * 1.3) 35px;
     text-decoration: none;
