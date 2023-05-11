@@ -36,6 +36,12 @@ h2 {
   font-size: $font-size__heading-2;
   font-weight: 700;
   margin-bottom: $spacing__default;
+  &.-reduced {
+    font-size: $font-size__heading-3;
+    font-weight: 300;
+    margin-bottom: $spacing__default;
+    margin-top: 20px;
+  }
   @include mixinResponsive("mobile") {
     font-size: calc($font-size__heading-2 - 50%);
   }
