@@ -23,9 +23,6 @@
     padding-top: calc($spacing__default * 1.4);
   }
   .__nav {
-    @include mixinResponsive("narrow-mobile") {
-      //   border: 1px solid red;
-    }
     ul {
       padding: 0;
       text-align: right;
@@ -40,11 +37,20 @@
             margin-left: 0;
             margin-bottom: 0;
           }
+          //   @include mixinResponsive("narrow-mobile") {
+          //     &:first-child {
+          //       border: 1px solid red;
+          //     }
+          //   }
           a {
             display: block;
-            font-weight: 500;
+            font-weight: 700;
             padding: $spacing__small $spacing__small;
             text-decoration: none;
+            @include mixinResponsive("mobile") {
+              //   font-weight: 500;
+              padding: $spacing__small calc($spacing__small / 3);
+            }
           }
         }
       }
